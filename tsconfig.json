@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+		"module": "esnext",
+		"strict": true,
+		"jsx": "preserve",
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "@dcloudio/types",
+      "@ttou/uv-typings/shim",
+      "@ttou/uv-typings/v2",
+      "@uni-helper/uni-app-types",
+      "@mini-types/alipay",
+      "miniprogram-api-typings",
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "types"],
+  "exclude": ["node_modules", "unpackage", "dist", "src/**/*.nvue"],
+  "vueCompilerOptions": {
+    "nativeTags": ["block", "component", "template", "slot"],
+    "target": 2
+  }
+}
